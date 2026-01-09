@@ -1,9 +1,9 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Check, AlertTriangle, ArrowRight, X, HelpCircle, ChevronDown } from "lucide-react";
+import { Check, AlertTriangle, ArrowRight, X, HelpCircle, ChevronDown, Lock } from "lucide-react";
 
 export default function Home() {
-  const affiliateLink = "https://go.hotmart.com/V103763588J";
+  const affiliateLink = "https://go.hotmart.com/V103763588J?dp=1";
 
   return (
     <>
@@ -29,9 +29,12 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto px-8 py-4 bg-green-600 text-white rounded-xl font-bold text-lg hover:bg-green-700 transition-all shadow-lg shadow-green-200 flex items-center justify-center gap-2"
               >
-                👉 Ver o site oficial do curso
+                👉 Acessar página do produto na Hotmart
               </a>
             </div>
+            <p className="mt-4 text-xs text-gray-500 flex items-center justify-center gap-1">
+              <Lock className="w-3 h-3" /> Checkout oficial e seguro pela Hotmart
+            </p>
           </div>
         </section>
 
@@ -119,7 +122,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 bg-blue-600 text-white rounded-xl font-bold text-lg hover:bg-blue-700 transition-all shadow-lg shadow-blue-200"
               >
-                Quero aprender Facebook Ads agora
+                Ver detalhes e comprar na Hotmart
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>
@@ -227,7 +230,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 bg-green-600 text-white rounded-xl font-bold text-lg hover:bg-green-700 transition-all shadow-lg shadow-green-200"
             >
-              Ver preço e conteúdo completo
+              Comprar com segurança pela Hotmart
               <ArrowRight className="w-5 h-5" />
             </a>
             <p className="mt-4 text-xs text-gray-500">

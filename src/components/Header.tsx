@@ -9,12 +9,12 @@ export default function Header() {
         </Link>
         
         <a 
-          href="https://go.hotmart.com/V103763588J" 
+          href="https://go.hotmart.com/V103763588J?dp=1" 
           target="_blank" 
           rel="noopener noreferrer"
           className="bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-green-700 transition-colors"
         >
-          Ver Site Oficial
+          Ver na Hotmart
         </a>
       </div>
     </header>
