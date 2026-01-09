@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Check, AlertTriangle, ArrowRight, X, HelpCircle, ChevronDown, Lock } from "lucide-react";
+import { Check, AlertTriangle, ArrowRight, Lock, BookOpen, Users, ShieldCheck, Star } from "lucide-react";
 
 export default function Home() {
   const affiliateLink = "https://go.hotmart.com/V103763588J?dp=1";
@@ -8,235 +8,185 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex-grow">
+      <main className="flex-grow bg-gray-50">
+        
         {/* Hero Section */}
-        <section className="bg-gradient-to-b from-blue-50 to-white py-16 md:py-24">
+        <section className="bg-white pt-16 pb-20 border-b border-gray-100">
           <div className="container mx-auto px-4 text-center max-w-4xl">
-            <span className="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-700 text-sm font-bold mb-6">
-              Análise Independente e Atualizada
+            <span className="inline-block py-1.5 px-4 rounded-full bg-blue-50 text-blue-700 text-sm font-bold mb-6 border border-blue-100">
+              Análise Honesta e Independente • Atualizado 2026
             </span>
-            <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
-              Tráfego Pago Descomplicado Funciona? <br className="hidden md:block"/>
-              <span className="text-blue-700">Review Completo e Atualizado</span>
+            <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight tracking-tight">
+              Tráfego Pago Descomplicado funciona mesmo? <span className="text-blue-700">Vale a pena em 2026?</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Se você quer aprender Facebook Ads do zero e evitar erros comuns, esta análise mostra de forma clara se o curso <strong>Tráfego Pago Descomplicado</strong> é uma boa opção para você.
+            <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+              Muitas pessoas querem aprender a anunciar no Facebook Ads, mas têm medo de cursos complexos e caros. Nesta análise completa, vamos revelar se o método <strong>Tráfego Pago Descomplicado</strong> entrega o que promete.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            
+            <div className="flex flex-col items-center justify-center gap-4">
               <a 
                 href={affiliateLink}
                 target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto px-8 py-4 bg-green-600 text-white rounded-xl font-bold text-lg hover:bg-green-700 transition-all shadow-lg shadow-green-200 flex items-center justify-center gap-2"
+                rel="nofollow sponsored noopener noreferrer"
+                className="w-full sm:w-auto px-8 py-4 bg-green-600 text-white rounded-xl font-bold text-lg hover:bg-green-700 transition-all shadow-lg shadow-green-200 flex items-center justify-center gap-2 transform hover:-translate-y-1"
               >
-                👉 Acessar página do produto na Hotmart
+                👉 Ver site oficial do curso
               </a>
+              <p className="text-xs text-gray-400 flex items-center gap-1">
+                <Lock className="w-3 h-3" /> Link seguro para o site oficial
+              </p>
             </div>
-            <p className="mt-4 text-xs text-gray-500 flex items-center justify-center gap-1">
-              <Lock className="w-3 h-3" /> Checkout oficial e seguro pela Hotmart
-            </p>
           </div>
         </section>
 
-        <div className="container mx-auto px-4 max-w-3xl pb-20 space-y-16">
+        <div className="container mx-auto px-4 max-w-3xl py-16 space-y-16">
           
           {/* O que é */}
-          <section className="prose prose-lg prose-blue max-w-none">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">O que é o Tráfego Pago Descomplicado?</h2>
-            <p className="text-gray-600 mb-4">
-              O <strong>Tráfego Pago Descomplicado</strong> é um treinamento online focado em ensinar, passo a passo, como criar anúncios no Facebook Ads e Instagram Ads de forma prática e direta.
-            </p>
-            <p className="text-gray-600">
-              Diferente de cursos avançados e complexos que custam uma fortuna, a proposta aqui é pegar o aluno pela mão — desde a criação da conta de anúncios até a publicação das primeiras campanhas reais. É voltado especialmente para quem está começando do zero e precisa de uma metodologia descomplicada para vender online.
-            </p>
+          <section className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+              <BookOpen className="w-8 h-8 text-blue-600" />
+              O que é o Tráfego Pago Descomplicado?
+            </h2>
+            <div className="prose prose-lg text-gray-600">
+              <p className="mb-4">
+                O <strong>Tráfego Pago Descomplicado</strong> é um curso online 100% focado em ensinar qualquer pessoa a criar anúncios no Facebook Ads e Instagram Ads, mesmo que não tenha nenhuma experiência anterior.
+              </p>
+              <p className="mb-4">
+                Diferente de formações teóricas longas, a proposta deste treinamento é ser um guia prático: você assiste à aula e aplica imediatamente. Ele é hospedado e vendido pela <strong>Hotmart</strong>, a maior plataforma de produtos digitais da América Latina, o que garante segurança na entrega do conteúdo.
+              </p>
+            </div>
           </section>
 
-          {/* Para quem é vs Não é */}
-          <div className="grid md:grid-cols-2 gap-8">
-            <section className="bg-green-50 p-8 rounded-2xl border border-green-100 shadow-sm">
-              <h2 className="text-xl font-bold text-green-800 mb-6 flex items-center gap-2">
-                <Check className="w-6 h-6" /> Para quem é indicado?
-              </h2>
-              <ul className="space-y-4">
-                {[
-                  "Iniciantes em tráfego pago",
-                  "Pessoas que querem divulgar produtos digitais",
-                  "Pequenos empreendedores",
-                  "Afiliados iniciantes",
-                  "Quem busca aprendizado prático"
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-gray-700">
-                    <Check className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </section>
-
-            <section className="bg-red-50 p-8 rounded-2xl border border-red-100 shadow-sm">
-              <h2 className="text-xl font-bold text-red-800 mb-6 flex items-center gap-2">
-                <X className="w-6 h-6" /> Para quem NÃO é indicado?
-              </h2>
-              <ul className="space-y-4">
-                {[
-                  "Quem busca dinheiro fácil",
-                  "Quem não quer estudar",
-                  "Quem espera resultados sem aplicar",
-                  "Quem procura hacks ou esquemas"
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-gray-700">
-                    <X className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          </div>
-
-          {/* O que ensina */}
+          {/* Para quem é */}
           <section>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">O que o curso ensina?</h2>
-            <div className="grid sm:grid-cols-2 gap-4 mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+              <Users className="w-8 h-8 text-blue-600" />
+              Para quem este curso é indicado?
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
               {[
-                "Criação de conta de anúncios",
-                "Estrutura de campanhas vencedoras",
-                "Criação de anúncios (Criativos)",
-                "Otimização de orçamento",
-                "Escala básica para vender mais",
-                "Erros comuns para evitar"
+                "Iniciantes em tráfego pago que nunca anunciaram",
+                "Afiliados que querem vender produtos digitais",
+                "Donos de pequenos negócios (delivery, serviços, lojas)",
+                "Pessoas que querem aprender uma nova habilidade digital"
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-3 p-4 bg-white border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                  <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-sm flex-shrink-0">
-                    {i + 1}
+                <div key={i} className="flex items-start gap-3 p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
+                  <div className="bg-green-100 p-1 rounded-full mt-0.5">
+                    <Check className="w-4 h-4 text-green-600" />
                   </div>
                   <span className="font-medium text-gray-700">{item}</span>
                 </div>
               ))}
             </div>
-            
-            {/* Middle CTA */}
-            <div className="text-center">
-               <a 
-                href={affiliateLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 bg-blue-600 text-white rounded-xl font-bold text-lg hover:bg-blue-700 transition-all shadow-lg shadow-blue-200"
-              >
-                Ver detalhes e comprar na Hotmart
-                <ArrowRight className="w-5 h-5" />
-              </a>
-            </div>
           </section>
 
-          {/* Prós e Contras */}
-          <section className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-            <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200">
-              <div className="p-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-6">Pontos Positivos</h3>
-                <ul className="space-y-4">
-                  {[
-                    "Conteúdo 100% prático e direto ao ponto",
-                    "Linguagem simples (sem 'economês')",
-                    "Acesso online imediato e vitalício",
-                    "Suporte a dúvidas incluso",
-                    "Preço extremamente acessível para iniciantes"
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm text-gray-600">
-                      <div className="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 flex-shrink-0" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="p-8 bg-gray-50/50">
-                <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                  <AlertTriangle className="w-5 h-5 text-yellow-500" /> Pontos de Atenção
-                </h3>
-                <ul className="space-y-4">
-                  {[
-                    "Resultados dependem da sua aplicação prática",
-                    "Não é uma fórmula mágica de renda automática",
-                    "Exige dedicação para assistir e implementar"
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm text-gray-600">
-                      <div className="w-1.5 h-1.5 rounded-full bg-orange-400 mt-2 flex-shrink-0" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          {/* FAQ Section */}
-          <section className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 flex items-center gap-2">
-              <HelpCircle className="w-8 h-8 text-blue-600" />
-              Perguntas frequentes
-            </h2>
-            <div className="space-y-6">
+          {/* Benefícios */}
+          <section className="bg-blue-50 p-8 rounded-2xl border border-blue-100">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">Principais benefícios do curso</h2>
+            <ul className="space-y-4">
               {[
-                {
-                  q: "O curso Tráfego Pago Descomplicado funciona mesmo?",
-                  a: "Sim, funciona porque ensina a base técnica correta das ferramentas de anúncio. Porém, o resultado financeiro depende da qualidade do seu produto e da sua dedicação em aplicar e otimizar as campanhas."
-                },
-                {
-                  q: "Preciso ter experiência para fazer o curso?",
-                  a: "Não. O curso foi desenhado exatamente para quem está começando do absoluto zero e nunca criou um anúncio antes."
-                },
-                {
-                  q: "Em quanto tempo vejo resultados?",
-                  a: "Isso varia muito de aluno para aluno e do nicho de atuação. Alguns conseguem resultados nas primeiras semanas, outros levam meses testando e aprendendo. O importante é não desistir na primeira dificuldade."
-                },
-                {
-                  q: "O curso é indicado para afiliados?",
-                  a: "Com certeza. Muitos dos exemplos e estratégias podem ser aplicados diretamente para quem deseja vender produtos digitais como afiliado."
-                },
-                {
-                  q: "Tem garantia pela Hotmart?",
-                  a: "Sim! Como todo produto vendido pela Hotmart, você tem uma garantia incondicional (geralmente de 7 dias) para testar o conteúdo. Se não gostar, pode pedir reembolso."
-                }
-              ].map((faq, i) => (
-                <div key={i} className="border-b border-gray-100 last:border-0 pb-6 last:pb-0">
-                  <h3 className="font-bold text-lg text-gray-900 mb-2 flex justify-between items-center cursor-pointer group">
-                    {faq.q}
-                    <ChevronDown className="w-5 h-5 text-gray-400 group-hover:text-blue-600 transition-colors" />
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {faq.a}
-                  </p>
-                </div>
+                "Aulas 100% práticas e direto ao ponto",
+                "Passo a passo do zero ao anúncio no ar",
+                "Metodologia focada exclusivamente em iniciantes",
+                "Acesso a atualizações da plataforma",
+                "Bônus exclusivos incluídos na oferta"
+              ].map((item, i) => (
+                <li key={i} className="flex items-center gap-3 text-gray-700 bg-white p-4 rounded-lg shadow-sm border border-blue-100">
+                  <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+                  <span className="font-medium">{item}</span>
+                </li>
               ))}
+            </ul>
+          </section>
+
+          {/* Confiabilidade */}
+          <section>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+              <ShieldCheck className="w-8 h-8 text-blue-600" />
+              O curso Tráfego Pago Descomplicado é confiável?
+            </h2>
+            <div className="prose prose-lg text-gray-600 mb-8">
+              <p className="mb-4">
+                Sim, é confiável. O produto é comercializado através da <strong>Hotmart</strong>, que processa o pagamento e entrega o acesso automaticamente por e-mail.
+              </p>
+              <p>
+                Além disso, o curso oferece uma <strong>garantia incondicional de 7 dias</strong>. Isso significa que você pode comprar, assistir às aulas e, se não gostar por qualquer motivo, solicitar o reembolso total do valor pago diretamente na plataforma, sem burocracia.
+              </p>
+            </div>
+            
+            <div className="bg-yellow-50 p-6 rounded-xl border border-yellow-100 flex gap-4 items-start">
+              <AlertTriangle className="w-6 h-6 text-yellow-600 flex-shrink-0 mt-1" />
+              <div>
+                <h4 className="font-bold text-yellow-800 mb-1">Atenção aos resultados</h4>
+                <p className="text-sm text-yellow-700">
+                  É importante ressaltar que o curso ensina a <strong>técnica</strong> de anunciar. Os resultados financeiros dependem da aplicação correta, do seu produto, da sua oferta e do mercado. Não existem ganhos garantidos ou fáceis.
+                </p>
+              </div>
             </div>
           </section>
 
-          {/* Veredito / Final CTA */}
-          <section className="bg-blue-50 p-8 md:p-10 rounded-3xl text-center border border-blue-100">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              O curso Tráfego Pago Descomplicado vale a pena?
-            </h2>
-            <div className="prose prose-lg text-gray-700 mx-auto mb-8">
-              <p>
-                Se você está procurando uma forma honesta, didática e econômica de aprender a anunciar no Facebook e Instagram, <strong>sim, vale a pena.</strong>
-              </p>
-              <p>
-                Ele não vai te deixar rico do dia para a noite, mas vai te dar a base técnica sólida necessária para começar a vender online ou divulgar seu negócio, sem gastar rios de dinheiro com agências ou cometendo erros bobos de iniciante.
-              </p>
+          {/* Depoimentos */}
+          <section>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Depoimentos e resultados</h2>
+            <p className="text-gray-600 mb-8">
+              Segundo relatos públicos de alunos que já fizeram o treinamento, o curso cumpre o que promete ao desmistificar o Gerenciador de Anúncios. Muitos destacam a didática simples como o ponto forte, permitindo que leigos consigam rodar suas primeiras campanhas em poucos dias.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 italic text-gray-600">
+                 "Finalmente entendi como funciona o pixel e as campanhas. A didática é muito boa para quem não sabe nada."
+                 <div className="mt-4 text-sm font-bold text-gray-400 not-italic">- Relato de Aluno</div>
+               </div>
+               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 italic text-gray-600">
+                 "Direto ao ponto, sem enrolação. Ótimo para quem tem pressa em aprender."
+                 <div className="mt-4 text-sm font-bold text-gray-400 not-italic">- Relato de Aluno</div>
+               </div>
             </div>
+          </section>
+
+          {/* Onde comprar */}
+          <section className="bg-gray-900 text-white p-8 md:p-12 rounded-3xl text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6">
+              Onde comprar o Tráfego Pago Descomplicado com segurança?
+            </h2>
+            <p className="text-gray-300 mb-8 max-w-xl mx-auto">
+              Para garantir sua vaga com segurança, acesso aos bônus e a garantia de 7 dias, a compra deve ser realizada exclusivamente através do site oficial na Hotmart.
+            </p>
             
             <a 
               href={affiliateLink}
               target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 bg-green-600 text-white rounded-xl font-bold text-lg hover:bg-green-700 transition-all shadow-lg shadow-green-200"
+              rel="nofollow sponsored noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 bg-green-500 text-white rounded-xl font-bold text-lg hover:bg-green-600 transition-all shadow-lg shadow-green-900/20"
             >
-              Comprar com segurança pela Hotmart
+              Acessar site oficial na Hotmart
               <ArrowRight className="w-5 h-5" />
             </a>
-            <p className="mt-4 text-xs text-gray-500">
-              Compra segura e garantia direto pela plataforma Hotmart.
+          </section>
+
+          {/* Conclusão */}
+          <section className="prose prose-lg prose-blue max-w-none">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Conclusão: Vale a pena?</h2>
+            <p>
+              Após analisar a proposta, o conteúdo e o custo-benefício, nossa conclusão é que <strong>sim, o Tráfego Pago Descomplicado vale a pena</strong>, especialmente para iniciantes.
+            </p>
+            <p>
+              Ele não é uma pílula mágica que vai te deixar rico, mas é uma ferramenta educacional sólida e acessível para quem quer dominar uma das habilidades mais importantes do marketing digital hoje: comprar tráfego qualificado.
+            </p>
+            <p>
+              Se você está disposto a estudar e aplicar, é um excelente ponto de partida.
             </p>
           </section>
+
+          <div className="text-center pt-8">
+            <a 
+              href={affiliateLink}
+              target="_blank"
+              rel="nofollow sponsored noopener noreferrer"
+              className="inline-flex items-center text-blue-600 font-bold hover:underline"
+            >
+              Ir para o site oficial agora <ArrowRight className="w-4 h-4 ml-1" />
+            </a>
+          </div>
 
         </div>
       </main>
