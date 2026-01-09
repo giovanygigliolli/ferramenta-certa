@@ -127,18 +127,18 @@ export default function Home() {
 
           {/* Depoimentos */}
           <section>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Depoimentos e resultados</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Relatos públicos de alunos</h2>
             <p className="text-gray-600 mb-8">
-              Segundo relatos públicos de alunos que já fizeram o treinamento, o curso cumpre o que promete ao desmistificar o Gerenciador de Anúncios. Muitos destacam a didática simples como o ponto forte, permitindo que leigos consigam rodar suas primeiras campanhas em poucos dias.
+              Observando comentários públicos e avaliações encontradas na internet sobre o curso, nota-se que a maioria dos alunos destaca a didática como ponto forte. Abaixo, resumimos os pontos mais citados:
             </p>
             <div className="grid md:grid-cols-2 gap-6">
-               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 italic text-gray-600">
-                 "Finalmente entendi como funciona o pixel e as campanhas. A didática é muito boa para quem não sabe nada."
-                 <div className="mt-4 text-sm font-bold text-gray-400 not-italic">- Relato de Aluno</div>
+               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-gray-600">
+                 <p className="mb-3">Muitos alunos relatam que finalmente entenderam como funciona o pixel e a estrutura de campanhas, algo que achavam muito difícil antes.</p>
+                 <div className="text-sm font-bold text-blue-600">Ponto positivo: Clareza técnica</div>
                </div>
-               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 italic text-gray-600">
-                 "Direto ao ponto, sem enrolação. Ótimo para quem tem pressa em aprender."
-                 <div className="mt-4 text-sm font-bold text-gray-400 not-italic">- Relato de Aluno</div>
+               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-gray-600">
+                 <p className="mb-3">Outro aspecto frequentemente elogiado é a objetividade das aulas, sem enrolação teórica desnecessária, ideal para quem tem pressa.</p>
+                 <div className="text-sm font-bold text-blue-600">Ponto positivo: Objetividade</div>
                </div>
             </div>
           </section>
