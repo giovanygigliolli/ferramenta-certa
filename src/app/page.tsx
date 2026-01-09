@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Check, AlertTriangle, ArrowRight, Lock, BookOpen, Users, ShieldCheck, Star } from "lucide-react";
+import { Check, AlertTriangle, ArrowRight, Lock, BookOpen, Users, ShieldCheck, Star, HelpCircle, ChevronDown } from "lucide-react";
 
 export default function Home() {
   const affiliateLink = "https://go.hotmart.com/V103763588J?dp=1";
@@ -128,8 +128,8 @@ export default function Home() {
           {/* Depoimentos */}
           <section>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Relatos públicos de alunos</h2>
-            <p className="text-gray-600 mb-8">
-              Observando comentários públicos e avaliações encontradas na internet sobre o curso, nota-se que a maioria dos alunos destaca a didática como ponto forte. Abaixo, resumimos os pontos mais citados:
+            <p className="text-gray-600 mb-8 bg-gray-100 p-4 rounded-lg text-sm border border-gray-200">
+              Os comentários abaixo são baseados em relatos públicos encontrados em avaliações abertas na internet. Os resultados podem variar de pessoa para pessoa.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-gray-600">
@@ -140,6 +140,48 @@ export default function Home() {
                  <p className="mb-3">Outro aspecto frequentemente elogiado é a objetividade das aulas, sem enrolação teórica desnecessária, ideal para quem tem pressa.</p>
                  <div className="text-sm font-bold text-blue-600">Ponto positivo: Objetividade</div>
                </div>
+            </div>
+          </section>
+
+          {/* FAQ Section */}
+          <section className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 flex items-center gap-2">
+              <HelpCircle className="w-8 h-8 text-blue-600" />
+              Perguntas frequentes sobre o Tráfego Pago Descomplicado
+            </h2>
+            <div className="space-y-6">
+              {[
+                {
+                  q: "O Tráfego Pago Descomplicado funciona para iniciantes?",
+                  a: "Sim. O curso foi desenhado especificamente para quem está começando do zero, ensinando desde a criação da conta até o primeiro anúncio."
+                },
+                {
+                  q: "Preciso aparecer ou vender algo?",
+                  a: "Você não precisa aparecer nos anúncios se não quiser. O curso ensina estratégias variadas. Para ter resultados financeiros, você precisará ter algo para vender (seja um produto próprio, serviço ou produto como afiliado)."
+                },
+                {
+                  q: "Em quanto tempo vejo resultados?",
+                  a: "Não existe um prazo fixo. O curso ensina a ferramenta, mas o resultado depende do seu nicho, da qualidade do seu anúncio e do seu investimento. Alguns alunos têm resultados em dias, outros em semanas."
+                },
+                {
+                  q: "O curso tem garantia?",
+                  a: "Sim, garantia incondicional de 7 dias garantida pela Hotmart."
+                },
+                {
+                  q: "O acesso é vitalício?",
+                  a: "Geralmente os cursos da Hotmart oferecem acesso vitalício ou por um longo período (1 ano). Verifique essa informação atualizada diretamente na página de checkout."
+                }
+              ].map((faq, i) => (
+                <div key={i} className="border-b border-gray-100 last:border-0 pb-6 last:pb-0">
+                  <h3 className="font-bold text-lg text-gray-900 mb-2 flex justify-between items-center cursor-pointer group">
+                    {faq.q}
+                    <ChevronDown className="w-5 h-5 text-gray-400 group-hover:text-blue-600 transition-colors" />
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {faq.a}
+                  </p>
+                </div>
+              ))}
             </div>
           </section>
 

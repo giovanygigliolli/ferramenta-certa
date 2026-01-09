@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tráfego Pago Descomplicado Funciona? Vale a Pena em 2026?",
-  description: "Veja se o curso Tráfego Pago Descomplicado funciona, se é confiável e se vale a pena. Análise completa antes de comprar.",
+  title: "Tráfego Pago Descomplicado Funciona? Vale a Pena em 2026",
+  description: "Análise honesta do curso Tráfego Pago Descomplicado. Veja se funciona, se é confiável e se vale a pena para iniciantes em Facebook Ads.",
   keywords: ["tráfego pago descomplicado funciona", "tráfego pago descomplicado vale a pena", "curso de tráfego pago hotmart", "curso de facebook ads", "facebook ads para iniciantes"],
 };
 
