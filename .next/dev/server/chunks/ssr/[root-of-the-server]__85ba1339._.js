@@ -41,13 +41,14 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$i
 ;
 ;
 const metadata = {
-    title: "Tráfego Pago Descomplicado Funciona? Review Completo 2025",
-    description: "Análise honesta sobre o curso Tráfego Pago Descomplicado. Descubra se vale a pena para iniciantes e pequenos negócios. Sem promessas falsas.",
+    title: "Tráfego Pago Descomplicado Funciona? Review Completo e Atualizado",
+    description: "Análise honesta do curso Tráfego Pago Descomplicado. Veja o que ele ensina, para quem é indicado e se realmente vale a pena aprender Facebook Ads.",
     keywords: [
-        "tráfego pago funciona",
-        "curso de facebook ads",
+        "tráfego pago descomplicado funciona",
         "tráfego pago descomplicado vale a pena",
-        "curso de tráfego pago hotmart"
+        "curso de tráfego pago hotmart",
+        "curso de facebook ads",
+        "facebook ads para iniciantes"
     ]
 };
 function RootLayout({ children }) {
